@@ -9,6 +9,8 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 | AdvCAM                | R50 | 55.6 | 68.0 |
 | **CLIMS**                 | R50 | 56.6 | 70.5 |
 
+(The generated pseudo masks were provided in [Google Drive]())
+
 ## 2. Evaluation results on PASCAL VOC2012.
 | Method                | Supervision| val | test |
 |:---------------------:|:---:|:----:|:----:|
