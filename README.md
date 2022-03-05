@@ -17,3 +17,15 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 | AdvCAM                | S   | 68.1 | 68.0 |
 | EDAM                  | I+S | 70.9 | 70.6 |
 | **CLIMS**                 | S   | 70.4 | 70.0 |
+
+
+If you are using our code, please consider citing our paper.
+
+```
+@article{clims,
+  title={Cross Language Image Matching for Weakly Supervised Semantic Segmentation},
+  author={Xie, Jinheng and Hou, Xianxu and Ye, Kai and Shen, Linlin},
+  journal={arXiv preprint},
+  year={2022}
+}
+```
