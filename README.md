@@ -16,6 +16,7 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 |:---------------------:|:---:|:----:|:----:|
 | AdvCAM                | S   | 68.1 | 68.0 |
 | EDAM                  | I+S | 70.9 | 70.6 |
+| **CLIMS**                 | S   | 69.3 | 68.7 |
 | **CLIMS**                 | S   | 70.4 | 70.0 |
 
 
