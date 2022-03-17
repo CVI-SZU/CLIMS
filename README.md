@@ -9,8 +9,6 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 | AdvCAM                | R50 | 55.6 | 68.0 |
 | **CLIMS**                 | R50 | 56.6 | 70.5 |
 
-(The generated CAMs and pseudo masks can be download at [Google Drive](https://drive.google.com/file/d/1Z_3BWH_KcJnKwQ3IItNozzAXmOzRP8yU/view?usp=sharing))
-
 ## 2. Evaluation results on PASCAL VOC2012.
 | Method                | Supervision| val | test |
 |:---------------------:|:---:|:----:|:----:|
@@ -18,7 +16,8 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 | EDAM                  | I+S | 70.9 | 70.6 |
 | **CLIMS**                 | S   | 69.3 | 68.7 | 
 | **CLIMS**                 | S   | 70.4 | 70.0 |
-(The pretrainde models can be download at [Google Drive](https://drive.google.com/file/d/1Z_3BWH_KcJnKwQ3IItNozzAXmOzRP8yU/view?usp=sharing))
+
+(Initial CAMs, pseudo semantic masks, and pretrainde models can be download at [Google Drive](https://drive.google.com/drive/folders/1njCaolWacqSmw7HVNecwvCAMm7NsCFPq?usp=sharing))
 
 If you are using our code, please consider citing our paper.
 
