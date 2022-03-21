@@ -1,5 +1,5 @@
 # CLIMS
-Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly Supervised Semantic Segmentation](https://arxiv.org/abs/2110.)" in **CVPR 2022**
+Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly Supervised Semantic Segmentation](https://arxiv.org/abs/2203.02668)" in **CVPR 2022**
 
 ![](clims.png)
 
