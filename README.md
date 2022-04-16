@@ -22,7 +22,7 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 If you are using our code, please consider citing our paper.
 
 ```
-@article{clims,
+@article{xie2022cross,
   title={Cross Language Image Matching for Weakly Supervised Semantic Segmentation},
   author={Xie, Jinheng and Hou, Xianxu and Ye, Kai and Shen, Linlin},
   journal={arXiv preprint arXiv:2203.02668},
