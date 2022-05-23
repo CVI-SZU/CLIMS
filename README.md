@@ -36,7 +36,7 @@ CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/V
 
 | Method    | backbone | CAMs | + RW | + IRNet |
 |:---------:|:--------:|:----:|:----:|:----:|
-| **CLIMS(cvpr)** | R50      | 56.6 | 70.5 | - |
+| **CLIMS(camera-ready)** | R50      | 56.6 | 70.5 | - |
 | **CLIMS(this repo)**    | R50      | 58.6 | ~73 | 74.1 |
 
 ### Evaluation results on PASCAL VOC2012 val and test sets.
@@ -46,8 +46,8 @@ CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/V
 |:---------:|:-----------:|:----:|:----:|:----:|:----:|
 | AdvCAM    | S           | DeepLabV2 |  ImageNet | 68.1 | 68.0 |
 | EDAM      | I+S         | DeepLabV2 |  COCO     | 70.9 | 70.6 |
-| **CLIMS(cvpr)** | I     | DeepLabV2 |  ImageNet | 69.3 | 68.7 |
-| **CLIMS(cvpr)** | I     | DeepLabV2 |  COCO     | 70.4 | 70.0 |
+| **CLIMS(camera-ready)** | I     | DeepLabV2 |  ImageNet | 69.3 | 68.7 |
+| **CLIMS(camera-ready)** | I     | DeepLabV2 |  COCO     | 70.4 | 70.0 |
 | **CLIMS(this repo)** | I     | DeepLabV2 |ImageNet | 70.3 | 70.6 |
 | **CLIMS(this repo)** | I     | DeepLabV2 | COCO     | 71.4 | 71.2 |
 | **CLIMS(this repo)** | I     | DeepLabV1-R38 | COCO     | 73.3 | 73.4 |

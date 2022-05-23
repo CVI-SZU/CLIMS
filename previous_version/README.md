@@ -50,7 +50,7 @@ python evaluate.py --experiment_name AffinityNet@ResNet50@train@beta=10@exp_time
 
 | Method    | backbone | CAMs | + RW | + IRNet |
 |:---------:|:--------:|:----:|:----:|:----:|
-| **CLIMS(cvpr)** | R50      | 56.6 | 70.5 | - |
+| **CLIMS(camera-ready)** | R50      | 56.6 | 70.5 | - |
 
 ### Evaluation results on PASCAL VOC2012 val and test sets.
 
@@ -58,8 +58,8 @@ python evaluate.py --experiment_name AffinityNet@ResNet50@train@beta=10@exp_time
 |:---------:|:-----------:|:----:|:----:|:----:|:----:|
 | AdvCAM    | S           | DeepLabV2 |  ImageNet | 68.1 | 68.0 |
 | EDAM      | I+S         | DeepLabV2 |  COCO     | 70.9 | 70.6 |
-| **CLIMS(cvpr)** | I     | DeepLabV2 |  ImageNet | 69.3 | 68.7 |
-| **CLIMS(cvpr)** | I     | DeepLabV2 |  COCO     | 70.4 | 70.0 |
+| **CLIMS(camera-ready)** | I     | DeepLabV2 |  ImageNet | 69.3 | 68.7 |
+| **CLIMS(camera-ready)** | I     | DeepLabV2 |  COCO     | 70.4 | 70.0 |
 
 (Initial CAMs, pseudo semantic masks, and pre-trained models of camera-ready version can be found at [Google Drive](https://drive.google.com/drive/folders/1njCaolWacqSmw7HVNecwvCAMm7NsCFPq?usp=sharing))
 
