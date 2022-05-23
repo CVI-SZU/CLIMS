@@ -4,7 +4,7 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 
 ![](clims.png)
 
-Please to **NOTE** that this repository is an **camera-ready version** of CLIMS (you can refer to the root directory of `../`)
+Please to **NOTE** that this repository is an **camera-ready version** of CLIMS (you can refer the **improved version** to the root directory of `../`)
 
 ## Dataset
 ### PASCAL VOC2012
