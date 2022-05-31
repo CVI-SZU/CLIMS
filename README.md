@@ -55,7 +55,7 @@ CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/V
 | **CLIMS(camera-ready)** | I     | DeepLabV2 |  COCO     | 70.4 | 70.0 |
 | **CLIMS(this repo)** | I     | DeepLabV2 |ImageNet | 70.3 | 70.6 |
 | **CLIMS(this repo)** | I     | DeepLabV2 | COCO     | 71.4 | 71.2 |
-| **CLIMS(this repo)** | I     | DeepLabV1-R38 | COCO     | 73.3 | 73.4 |
+| **CLIMS(this repo)** | I     | DeepLabV1-R38 | ImageNet     | 73.3 | 73.4 |
 
 (**Please cite the results of camera-ready version**. Initial CAMs, pseudo semantic masks, and pre-trained models of camera-ready version can be found at [Google Drive](https://drive.google.com/drive/folders/1njCaolWacqSmw7HVNecwvCAMm7NsCFPq?usp=sharing))
 
