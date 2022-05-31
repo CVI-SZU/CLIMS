@@ -4,7 +4,7 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 
 :heart_eyes: Code for our
 paper "[CCAM: Contrastive learning of Class-agnostic Activation Map for Weakly Supervised Object Localization and Semantic Segmentation](https://arxiv.org/pdf/2203.13505.pdf)"
-in CVPR 2022 is also available at [here](https://github.com/CVI-SZU/CCAM).
+in **CVPR 2022** is also available at [here](https://github.com/CVI-SZU/CCAM).
 
 ![](clims.png)
 
