@@ -6,6 +6,10 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 
 **Please to NOTE that this repository is an **improved version** of our camera-ready version (you can refer to the directory of `previous_version/`). We recommend to use our improved version of CLIMS instead of camera-ready version.**
 
+:heart_eyes: Code for our
+paper "[CCAM: Contrastive learning of Class-agnostic Activation Map for Weakly Supervised Object Localization and Semantic Segmentation](https://arxiv.org/pdf/2203.13505.pdf)"
+in CVPR 2022 is also available at [here](https://github.com/CVI-SZU/CCAM).
+
 ## Dataset
 ### PASCAL VOC2012
 You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at here. Make sure your `data/VOC2012 folder` is structured as follows:
