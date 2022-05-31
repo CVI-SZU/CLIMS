@@ -44,7 +44,7 @@ CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/V
 
 | Method    | Supervision | Network  | Pretrained  | val  | test |
 |:---------:|:-----------:|:----:|:----:|:----:|:----:|
-| AdvCAM    | S           | DeepLabV2 |  ImageNet | 68.1 | 68.0 |
+| AdvCAM    | I           | DeepLabV2 |  ImageNet | 68.1 | 68.0 |
 | EDAM      | I+S         | DeepLabV2 |  COCO     | 70.9 | 70.6 |
 | **CLIMS(camera-ready)** | I     | DeepLabV2 |  ImageNet | 69.3 | 68.7 |
 | **CLIMS(camera-ready)** | I     | DeepLabV2 |  COCO     | 70.4 | 70.0 |
