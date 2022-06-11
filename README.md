@@ -62,6 +62,14 @@ CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/V
 If you are using our code, please consider citing our paper.
 
 ```
+@InProceedings{Xie_2022_CVPR,
+    author    = {Xie, Jinheng and Hou, Xianxu and Ye, Kai and Shen, Linlin},
+    title     = {CLIMS: Cross Language Image Matching for Weakly Supervised Semantic Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {4483-4492}
+}
 @article{xie2022cross,
   title={Cross Language Image Matching for Weakly Supervised Semantic Segmentation},
   author={Xie, Jinheng and Hou, Xianxu and Ye, Kai and Shen, Linlin},
