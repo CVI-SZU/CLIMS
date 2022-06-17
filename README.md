@@ -13,7 +13,7 @@ in **CVPR 2022** is also available at [here](https://github.com/CVI-SZU/CCAM).
 
 ## Dataset
 ### PASCAL VOC2012
-You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at here. Make sure your `data/VOC2012 folder` is structured as follows:
+You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and train_aug ground-truth can be found at [here](http://home.bharathh.info/pubs/codes/SBD/download.html). Make sure your `data/VOC2012 folder` is structured as follows:
 ```
 ├── VOC2012/
 |   ├── Annotations
