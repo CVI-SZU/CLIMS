@@ -3,7 +3,7 @@ import numpy as np
 import os
 from chainercv.datasets import VOCSemanticSegmentationDataset
 from chainercv.evaluations import calc_semantic_segmentation_confusion
-from clip_utils_for_sota import category_dict
+from clip_utils import category_dict
 
 def print_iou(iou, dname='voc'):
     iou_dict = {}
