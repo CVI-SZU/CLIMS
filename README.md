@@ -25,8 +25,13 @@ You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at 
 ### MS-COCO 2014 (coming soon) 
 
 ## Training
-1. Download pre-trained baseline CAM ('res50_cam.pth') at [here](https://drive.google.com/drive/folders/1CCYduc2L_V_s7MtXEuA_LzIscdlFFJag?usp=sharing) and put it at the directory of `cam-baseline-voc12/`
-2. Train CLIMS on PASCAL V0C2012 dataset to generate initial CAMs
+1. Install CLIP.
+```
+$ pip install ftfy regex tqdm
+$ pip install git+https://github.com/openai/CLIP.git
+```
+2. Download pre-trained baseline CAM ('res50_cam.pth') at [here](https://drive.google.com/drive/folders/1CCYduc2L_V_s7MtXEuA_LzIscdlFFJag?usp=sharing) and put it at the directory of `cam-baseline-voc12/`
+3. Train CLIMS on PASCAL V0C2012 dataset to generate initial CAMs
 ```
 CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/VOC2012/ --hyper 10,24,1,0.2 --clims_num_epoches 15 --cam_eval_thres 0.15 --work_space clims_voc12 --cam_network net.resnet50_clims --train_clims_pass True --make_clims_pass True --eval_cam_pass True
 ```
