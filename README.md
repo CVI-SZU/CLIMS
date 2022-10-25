@@ -69,7 +69,7 @@ If you are using our code, please consider citing our paper.
 ```
 @InProceedings{Xie_2022_CVPR,
     author    = {Xie, Jinheng and Hou, Xianxu and Ye, Kai and Shen, Linlin},
-    title     = {{CLIMS}: Cross Language Image Matching for Weakly Supervised Semantic Segmentation},
+    title     = {CLIMS: Cross Language Image Matching for Weakly Supervised Semantic Segmentation},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month     = {June},
     year      = {2022},
