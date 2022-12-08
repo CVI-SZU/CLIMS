@@ -22,7 +22,7 @@ You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at 
 |   ├── SegmentationClassAug
 |   └── SegmentationObject
 ```
-### MS-COCO 2014 (coming soon)
+### MS-COCO 2014
 You will need to download the images (JPEG format) in MSCOCO 2014 dataset at [here](https://cocodataset.org/#download) and ground-truth mask can be found at [here](https://drive.google.com/drive/folders/18l3aAs64Ld_uvAJm57O3EiHuhEXkdwUy?usp=share_link). Make sure your `data/COCO folder` is structured as follows:
 ```
 ├── COCO/
