@@ -22,20 +22,32 @@ You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at 
 |   ├── SegmentationClassAug
 |   └── SegmentationObject
 ```
-### MS-COCO 2014 (coming soon) 
+### MS-COCO 2014 (coming soon)
+You will need to download the images (JPEG format) in MSCOCO 2014 dataset at [here](https://cocodataset.org/#download) and ground-truth mask can be found at [here](https://drive.google.com/drive/folders/18l3aAs64Ld_uvAJm57O3EiHuhEXkdwUy?usp=share_link). Make sure your `data/COCO folder` is structured as follows:
+```
+├── COCO/
+|   ├── train2014
+|   ├── val2014
+|   ├── annotations
+|   |   ├── instances_train2014.json
+|   |   ├── instances_val2014.json
+|   ├── mask
+|   |   ├── train2014
+|   |   ├── val2014
+```
 
-## Training
+## Training on PASCAL VOC2012
 1. Install CLIP.
 ```
 $ pip install ftfy regex tqdm
 $ pip install git+https://github.com/openai/CLIP.git
 ```
-2. Download pre-trained baseline CAM ('res50_cam.pth') at [here](https://drive.google.com/drive/folders/1CCYduc2L_V_s7MtXEuA_LzIscdlFFJag?usp=sharing) and put it at the directory of `cam-baseline-voc12/`
-3. Train CLIMS on PASCAL V0C2012 dataset to generate initial CAMs
+2. Download pre-trained baseline CAM ('res50_cam.pth') at [here](https://drive.google.com/drive/folders/1CCYduc2L_V_s7MtXEuA_LzIscdlFFJag?usp=sharing) and put it at the directory of `cam-baseline-voc12/`.
+3. Train CLIMS on PASCAL V0C2012 dataset to generate initial CAMs.
 ```
 CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/VOC2012/ --hyper 10,24,1,0.2 --clims_num_epoches 15 --cam_eval_thres 0.15 --work_space clims_voc12 --cam_network net.resnet50_clims --train_clims_pass True --make_clims_pass True --eval_cam_pass True
 ```
-3. Train IRNet and generate pseudo semantic masks
+3. Train IRNet and generate pseudo semantic masks.
 ```
 CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/VOC2012/ --cam_eval_thres 0.15 --work_space clims_voc12 --cam_network net.resnet50_clims --cam_to_ir_label_pass True --train_irn_pass True --make_sem_seg_pass True --eval_sem_seg_pass True
 ```
@@ -63,6 +75,13 @@ CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/V
 | **CLIMS(this repo)** | I     | DeepLabV1-R38 | ImageNet    | 73.3 | 73.4 |
 
 (**Please cite the results of camera-ready version**. Initial CAMs, pseudo semantic masks, and pre-trained models of camera-ready version can be found at [Google Drive](https://drive.google.com/drive/folders/1njCaolWacqSmw7HVNecwvCAMm7NsCFPq?usp=sharing))
+
+## Training on MSCOCO 2014
+1. Download pre-trained baseline CAM ('res50_cam.pth') at [here](https://drive.google.com/drive/folders/18l3aAs64Ld_uvAJm57O3EiHuhEXkdwUy?usp=share_link) and put it at the directory of `cam-baseline-coco/`.
+2. Train CLIMS on MSCOCO 2014 dataset to generate initial CAMs.
+```
+CUDA_VISIBLE_DEVICES=6,7 python -m torch.distributed.launch --nproc_per_node=2 run_sample_coco.py --work_space clims_coco --clims_network net.resnet50_clims --train_clims_pass True --make_clims_pass True --eval_cam_pass True --clims_num_epoches 8 --cam_eval_thres 0.15 --hyper 2,14,1.25,0.2 --cam_batch_size 16 --clims_learning_rate 0.0005 --use_distributed_train True --cbs_loss_thresh 0.285
+```
 
 If you are using our code, please consider citing our paper.
 

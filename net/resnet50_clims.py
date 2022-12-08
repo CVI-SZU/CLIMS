@@ -74,6 +74,18 @@ class CLIMS(nn.Module):
         self.backbone = nn.ModuleList([self.stage1, self.stage2, self.stage3, self.stage4])
         self.newly_added = nn.ModuleList([self.classifier])
 
+    # -------------------------------------------------------------
+    # For DDP & syncBN training, must set 'requires_grad = False' before passing to DDP
+    # https://discuss.pytorch.org/t/how-does-distributeddataparallel-handle-parameters-whose-requires-grad-flag-is-false/90736/1
+        self._freeze_layers()
+
+    def _freeze_layers(self):
+        for p in self.resnet50.conv1.parameters():
+            p.requires_grad = False
+        for p in self.resnet50.bn1.parameters():
+            p.requires_grad = False
+    # --------------------------------------------------------------
+
     def _initialize_weights(self, layer):
         for m in layer.modules():
             if isinstance(m, nn.Conv2d):

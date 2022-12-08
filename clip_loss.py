@@ -50,3 +50,4 @@ class BackgroundSuppressionLoss(torch.nn.Module):
         mask = torch.where(logits_per_image > self.threshold, torch.ones_like(mask), torch.zeros_like(mask))
 
         return -(torch.log(1 - logits_per_image) * mask).sum()
+
