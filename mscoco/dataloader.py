@@ -151,7 +151,7 @@ class COCOClassificationDatasetMSF(COCOClassificationDataset):
                  scales=(1.0,)):
         self.scales = scales
         super().__init__(image_dir, anno_path, labels_path, img_normal, hor_flip)
-        self.coco.ids = self.coco.ids[:10000]
+        self.coco.ids = self.coco.ids#[:10000]
         print(len(self.coco.ids), 'images!')
 
     def __getitem__(self, index):
