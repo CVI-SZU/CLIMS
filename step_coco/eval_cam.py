@@ -26,8 +26,8 @@ def run(args):
     for i, pack in enumerate(dataset):
         if i % 1000 == 0:
             print(i, '/', num)
-        if i == 9999:
-            break
+        # if i == 9999:
+        #     break
         filename = pack['name'].split('.')[0]
 
         n_images += 1
