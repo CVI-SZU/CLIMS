@@ -1,9 +1,8 @@
 ## DeepLabv2
 This repository was highly based on [deeplab-pytorch](https://github.com/kazuto1011/deeplab-pytorch).
-
-###Step 1
+### Step 1
 Please download pre-trained weights from [Here](https://drive.google.com/drive/folders/1nsXWLoK1w56iC9DE5jwdcqQDX8of4DH5?usp=share_link) and put it into the directory `weights/`.
-###Step 2
+### Step 2
 Please specify the data root and experiment name in `config/xxx.yaml`.
 ### Step 3
 ```shell
