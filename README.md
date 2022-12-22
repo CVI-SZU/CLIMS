@@ -51,7 +51,10 @@ CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/V
 ```
 CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/VOC2012/ --cam_eval_thres 0.15 --work_space clims_voc12 --cam_network net.resnet50_clims --cam_to_ir_label_pass True --train_irn_pass True --make_sem_seg_pass True --eval_sem_seg_pass True
 ```
-4. Train DeepLabv2 using pseudo semantic masks. (Please refer to [deeplab-pytorch](https://github.com/kazuto1011/deeplab-pytorch))
+4. Train DeepLabv2 using pseudo semantic masks.
+```shell
+cd segmentation/
+```
 
 ## Evaluation Results
 ### The quality of initial CAMs and pseudo masks on PASCAL VOC2012.
