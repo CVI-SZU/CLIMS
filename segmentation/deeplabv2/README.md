@@ -9,5 +9,5 @@ Please specify the data root and experiment name in `config/xxx.yaml`.
 CUDA_VISIBLE_DEVICES=0 bash run_voc12_coco_pretrained.sh
 CUDA_VISIBLE_DEVICES=0 bash run_voc12_imagenet_pretrained.sh
 ```
-### Step 4 - Submit evaluation results to PASCAL VOC [evaluation server](http://host.robots.ox.ac.uk:8080/).
+### Step 4 - Submit results to PASCAL VOC [evaluation server](http://host.robots.ox.ac.uk:8080/).
 Please check the directory `data/features/your/experiment/name/deeplabv2_resnet101_msc/test/`. Please submit `results.tar.gz` to the server.
