@@ -16,7 +16,7 @@ import torch
 from PIL import Image
 from torch.utils import data
 
-from .base import _BaseDataset, _BaseDatasetTest, _BaseDatasetCotrain
+from .base import _BaseDataset, _BaseDatasetTest
 
 
 # class VOC(_BaseDataset):
