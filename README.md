@@ -4,7 +4,7 @@ Code repository for our paper "[CLIMS: Cross Language Image Matching for Weakly 
 
 :heart_eyes: Code for our
 paper "[CCAM: Contrastive learning of Class-agnostic Activation Map for Weakly Supervised Object Localization and Semantic Segmentation](https://openaccess.thecvf.com/content/CVPR2022/html/Xie_C2AM_Contrastive_Learning_of_Class-Agnostic_Activation_Map_for_Weakly_Supervised_CVPR_2022_paper.html)"
-in **CVPR 2022** is also available at [here](https://github.com/CVI-SZU/CCAM).
+in **CVPR 2022** is also available [here](https://github.com/CVI-SZU/CCAM).
 
 ![](clims.png)
 
@@ -13,7 +13,7 @@ in **CVPR 2022** is also available at [here](https://github.com/CVI-SZU/CCAM).
 
 ## Dataset
 ### PASCAL VOC2012
-You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and train_aug ground-truth can be found at [here](http://home.bharathh.info/pubs/codes/SBD/download.html). Make sure your `data/VOC2012 folder` is structured as follows:
+You will need to download the images (JPEG format) in PASCAL VOC2012 dataset from [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and train_aug ground-truth can be found [here](http://home.bharathh.info/pubs/codes/SBD/download.html). Make sure your `data/VOC2012 folder` is structured as follows:
 ```
 ├── VOC2012/
 |   ├── Annotations
@@ -23,7 +23,7 @@ You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at 
 |   └── SegmentationObject
 ```
 ### MS-COCO 2014
-You will need to download the images (JPEG format) in MSCOCO 2014 dataset at [here](https://cocodataset.org/#download) and ground-truth mask can be found at [here](https://drive.google.com/drive/folders/18l3aAs64Ld_uvAJm57O3EiHuhEXkdwUy?usp=share_link). Make sure your `data/COCO folder` is structured as follows:
+You will need to download the images (JPEG format) in MSCOCO 2014 dataset [here](https://cocodataset.org/#download) and ground-truth mask can be found [here](https://drive.google.com/drive/folders/18l3aAs64Ld_uvAJm57O3EiHuhEXkdwUy?usp=share_link). Make sure your `data/COCO folder` is structured as follows:
 ```
 ├── COCO/
 |   ├── train2014
@@ -42,7 +42,7 @@ You will need to download the images (JPEG format) in MSCOCO 2014 dataset at [he
 $ pip install ftfy regex tqdm
 $ pip install git+https://github.com/openai/CLIP.git
 ```
-2. Download pre-trained baseline CAM ('res50_cam.pth') at [here](https://drive.google.com/drive/folders/1CCYduc2L_V_s7MtXEuA_LzIscdlFFJag?usp=sharing) and put it at the directory of `cam-baseline-voc12/`.
+2. Download pre-trained baseline CAM ('res50_cam.pth') [here](https://drive.google.com/drive/folders/1CCYduc2L_V_s7MtXEuA_LzIscdlFFJag?usp=sharing) and put it at the directory of `cam-baseline-voc12/`.
 3. Train CLIMS on PASCAL V0C2012 dataset to generate initial CAMs.
 ```
 CUDA_VISIBLE_DEVICES=0 python run_sample.py --voc12_root /data1/xjheng/dataset/VOC2012/ --hyper 10,24,1,0.2 --clims_num_epoches 15 --cam_eval_thres 0.15 --work_space clims_voc12 --cam_network net.resnet50_clims --train_clims_pass True --make_clims_pass True --eval_cam_pass True
