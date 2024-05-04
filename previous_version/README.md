@@ -8,7 +8,7 @@ Please to **NOTE** that this repository is an **camera-ready version** of CLIMS 
 
 ## Dataset
 ### PASCAL VOC2012
-You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at here. Make sure your `data/VOC2012 folder` is structured as follows:
+You will need to download the images (JPEG format) in PASCAL VOC2012 dataset. Make sure your `data/VOC2012 folder` is structured as follows:
 ```
 ├── VOC2012/
 |   ├── Annotations
@@ -19,7 +19,7 @@ You will need to download the images (JPEG format) in PASCAL VOC2012 dataset at 
 ```
 
 ## Training
-Please download pre-trained models at [here](https://drive.google.com/drive/folders/1m5oGDLRHmAYDc893dirb-BSLcomEuT2u?usp=sharing) and put it at the directory of `experiments/models/`
+Please download pre-trained models from [here](https://drive.google.com/drive/folders/1m5oGDLRHmAYDc893dirb-BSLcomEuT2u?usp=sharing) and put it at the directory of `experiments/models/`
 1. Train CLIMS on PASCAL V0C2012 dataset
 ```
 OMP_NUM_THREADS=16 CUDA_VISIBLE_DEVICES=0 CUDA_VISIBLE_DEVICES=0 python train_CLIMS.py --experiment clims_voc12
@@ -32,7 +32,7 @@ OMP_NUM_THREADS=16 CUDA_VISIBLE_DEVICES=0 CUDA_VISIBLE_DEVICES=0 python inferenc
 ```
 python evaluate.py --experiment_name clims_voc12@train@scale=0.5,1.0,1.5,2.0
 ```
-4. Apply random walk to initial CAMs (You can download the pre-trained affinity net model at [here](https://drive.google.com/drive/folders/1m5oGDLRHmAYDc893dirb-BSLcomEuT2u?usp=sharing) and put it at the directory of `experiments/models/AffinityNet@ResNet50.pth`)
+4. Apply random walk to initial CAMs (You can download the pre-trained affinity net model from [here](https://drive.google.com/drive/folders/1m5oGDLRHmAYDc893dirb-BSLcomEuT2u?usp=sharing) and put it at the directory of `experiments/models/AffinityNet@ResNet50.pth`)
 ```
 OMP_NUM_THREADS=16 CUDA_VISIBLE_DEVICES=0 python inference_rw.py --cam_dir clims_voc12@train@scale=0.5,1.0,1.5,2.0 --domain train_aug --model_name AffinityNet@ResNet50
 ```
