@@ -80,7 +80,7 @@ cd segmentation/
 (**Please cite the results of camera-ready version**. Initial CAMs, pseudo semantic masks, and pre-trained models of camera-ready version can be found at [Google Drive](https://drive.google.com/drive/folders/1njCaolWacqSmw7HVNecwvCAMm7NsCFPq?usp=sharing))
 
 ## Training on MSCOCO 2014
-1. Download pre-trained baseline CAM ('res50_cam.pth') at [here](https://drive.google.com/drive/folders/18l3aAs64Ld_uvAJm57O3EiHuhEXkdwUy?usp=share_link) and put it at the directory of `cam-baseline-coco/`.
+1. Download pre-trained baseline CAM ('res50_cam.pth') [here](https://drive.google.com/drive/folders/18l3aAs64Ld_uvAJm57O3EiHuhEXkdwUy?usp=share_link) and put it at the directory of `cam-baseline-coco/`.
 2. Train CLIMS on MSCOCO 2014 dataset to generate initial CAMs.
 ```
 CUDA_VISIBLE_DEVICES=6,7 python -m torch.distributed.launch --nproc_per_node=2 run_sample_coco.py --work_space clims_coco --clims_network net.resnet50_clims --train_clims_pass True --make_clims_pass True --eval_cam_pass True --clims_num_epoches 8 --cam_eval_thres 0.15 --hyper 2,14,1.25,0.2 --cam_batch_size 16 --clims_learning_rate 0.0005 --use_distributed_train True --cbs_loss_thresh 0.285
